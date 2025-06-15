@@ -9,6 +9,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
     <style>
         body {
             font-family: 'Montserrat', sans-serif;
@@ -50,7 +51,7 @@
         }
         .banner {
             height: 300px;
-            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://www.jmentregas.com.br/site/wp-content/uploads/2020/08/bannerjm.jpg' width='800' height='400' viewBox='0 0 800 400'%3E%3Crect width='800' height='400' fill='%23003366'/%3E%3Cpath d='M0 80L50 90C100 100 200 120 300 120C400 120 500 100 600 100C700 100 750 120 800 140L800 400L0 400Z' fill='%2387CEFA'/%3E%3Cpath d='M0 150L50 160C100 170 200 190 300 190C400 190 500 170 600 160C700 150 750 150 800 150L800 400L0 400Z' fill='%23B0E0FF'/%3E%3C/svg%3E");
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("Design\ sem\ nome.gif");
             background-size: cover;
             background-position: center;
         }
@@ -99,7 +100,9 @@
         }
     </style>
 </head>
+
 <body>
+
     <!-- Header with Menu and Logo -->
     <header class="bg-black text-white shadow-lg">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
@@ -110,7 +113,6 @@
             </div>
             <nav class="hidden md:flex space-x-8">
                 <a href="#" class="nav-link font-medium hover:text-gray-400 transition-colors">Início</a>
-                <a href="#" class="nav-link font-medium hover:text-gray-400 transition-colors">Serviços</a>
                 <a href="#" class="nav-link font-medium hover:text-gray-400 transition-colors">Sobre Nós</a>
                 <a href="#" class="nav-link font-medium hover:text-gray-400 transition-colors">Contato</a>
             </nav>
@@ -124,7 +126,6 @@
         </div>
         <div id="mobile-menu" class="md:hidden hidden bg-black pb-4">
             <a href="#" class="block py-2 px-4 text-center hover:bg-gray-800">Início</a>
-            <a href="#" class="block py-2 px-4 text-center hover:bg-gray-800">Serviços</a>
             <a href="#" class="block py-2 px-4 text-center hover:bg-gray-800">Sobre Nós</a>
             <a href="#" class="block py-2 px-4 text-center hover:bg-gray-800">Contato</a>
         </div>
@@ -136,6 +137,78 @@
         <p class="text-xl md:text-2xl">Conte com a nossa equipe para suas entregas!</p>
     </div>
 </section>
+
+
+
+<style>
+ body {
+  background-color: #000; /* Fundo preto para o site */
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif; /* Fonte simples para leitura */
+  overflow-x: hidden; /* Evita barra de rolagem horizontal indesejada */
+}
+
+.banner-container {
+  width: 100%;
+  padding: 20px 0; /* Espaçamento acima e abaixo da faixa */
+  text-align: center; /* Centraliza o texto (se o texto não estiver rolando, ou apenas para o alinhamento inicial) */
+  overflow: hidden; /* Garante que a animação não vaze para fora da faixa */
+  white-space: nowrap; /* Impede que o conteúdo dentro quebre linha */
+  box-sizing: border-box; /* Garante que padding e border sejam incluídos na largura/altura */
+}
+
+.scrolling-wrapper {
+  display: inline-block; /* Permite que o wrapper se mova horizontalmente */
+  animation: scroll-left 30s linear infinite; /* Animação de rolagem contínua */
+  /* Ajuste '30s' para controlar a velocidade. Menor = mais rápido. */
+}
+
+.welcome-message {
+  font-size: 3em; /* Tamanho grande da fonte */
+  font-weight: bold;
+  text-transform: uppercase; /* Garante que as letras fiquem em caixa alta */
+  white-space: nowrap; /* Impede que o texto quebre linha */
+  display: inline-block; /* Permite que cada mensagem fique lado a lado */
+  padding-right: 50px; /* Espaçamento entre as mensagens duplicadas */
+
+  /* Estilo do degradê de arco-íris */
+  background: linear-gradient(
+    90deg,
+    #ff0000, /* Vermelho */
+    #ff7f00, /* Laranja */
+    #ffff00, /* Amarelo */
+    #00ff00, /* Verde */
+    #0000ff, /* Azul */
+    #4b0082, /* Anil */
+    #9400d3 /* Violeta */
+  );
+  -webkit-background-clip: text; /* Aplica o background ao texto */
+  -webkit-text-fill-color: transparent; /* Torna o texto transparente para mostrar o background */
+  background-size: 200% auto; /* Duplica o tamanho do background para a animação */
+  animation: rainbow-text 10s linear infinite; /* Animação do arco-íris */
+}
+
+/* Animação do arco-íris */
+@keyframes rainbow-text {
+  to {
+    background-position: 200% center; /* Move o background para a direita */
+  }
+}
+
+/* Animação de rolagem contínua */
+@keyframes scroll-left {
+  0% { transform: translateX(0%); } /* Começa na posição normal */
+  100% { transform: translateX(-50%); } /* Move para a esquerda em 50% do seu próprio tamanho */
+}
+</style>
+<div class="banner-container">
+  <div class="scrolling-wrapper">
+    <h1 class="welcome-message">SEJA BEM-VINDO, ENTREGADOR! PRONTO PARA MAIS ENTREGAS?</h1>
+    <h1 class="welcome-message">SEJA BEM-VINDO, ENTREGADOR! PRONTO PARA MAIS ENTREGAS?</h1>
+  </div>
+</div>>
+
 
 <!------------------------------------------------------------------------------------------------>
 <style>
@@ -1137,316 +1210,319 @@
             <!-- Perfil do Cliente 117 -->
             <div class="flex flex-col items-center mb-8">
                 <div class="profile-circle cursor-pointer w-32 h-32 rounded-full overflow-hidden border-4 border-[#003366] flex items-center justify-center" id="profile-circle-117">
-                    <img src="https://via.placeholder.com/128x128/00FF00/000000?text=Cliente+117" alt="Foto de Perfil do Cliente 117" class="w-full h-full object-cover">
+                    <img src="https://media-for2-2.cdn.whatsapp.net/v/t61.24694-24/370458480_140077645838333_3420365765222350663_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa1wEsudZ6QjFo9mZ0cccpD5kYI0Ji4MQ6K5WmZBrulHf4Qw&oe=685B1A32&_nc_sid=5e03e0&_nc_cat=108" alt="Foto de Perfil do Cliente 117" class="w-full h-full object-cover">
                 </div>
-                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">ESPAÇO</h3>
+                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">Temake Sushimar</h3>
             </div>
 
             <!-- Perfil do Cliente 118 -->
             <div class="flex flex-col items-center mb-8">
                 <div class="profile-circle cursor-pointer w-32 h-32 rounded-full overflow-hidden border-4 border-[#003366] flex items-center justify-center" id="profile-circle-118">
-                    <img src="https://via.placeholder.com/128x128/00FF00/000000?text=Cliente+118" alt="Foto de Perfil do Cliente 118" class="w-full h-full object-cover">
+                    <img src="https://media-for2-2.cdn.whatsapp.net/v/t61.24694-24/483280061_997131535370414_8132611780026675224_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa1wH-dPSb010lKIIowiwosGd31dsYDiiHU_KBoAJ4-CkJvg&oe=685B1FB0&_nc_sid=5e03e0&_nc_cat=100" alt="Foto de Perfil do Cliente 118" class="w-full h-full object-cover">
                 </div>
-                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">ESPAÇO</h3>
+                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">Tok & Glamour - Jóias e Acessórios</h3>
             </div>
 
             <!-- Perfil do Cliente 119 -->
             <div class="flex flex-col items-center mb-8">
                 <div class="profile-circle cursor-pointer w-32 h-32 rounded-full overflow-hidden border-4 border-[#003366] flex items-center justify-center" id="profile-circle-119">
-                    <img src="https://via.placeholder.com/128x128/00FF00/000000?text=Cliente+119" alt="Foto de Perfil do Cliente 119" class="w-full h-full object-cover">
+                    <img src="https://media-for2-2.cdn.whatsapp.net/v/t61.24694-24/325953709_852667989603432_4481912739620499123_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa1wE7dqU1VpcK2Nw-8y5Nc3mm1IGpoJhsVTELG1yRR3ECig&oe=685B0DE3&_nc_sid=5e03e0&_nc_cat=101" alt="Foto de Perfil do Cliente 119" class="w-full h-full object-cover">
                 </div>
-                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">ESPAÇO</h3>
+                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">ValCoffee</h3>
             </div>
 
             <!-- Perfil do Cliente 120 -->
             <div class="flex flex-col items-center mb-8">
                 <div class="profile-circle cursor-pointer w-32 h-32 rounded-full overflow-hidden border-4 border-[#003366] flex items-center justify-center" id="profile-circle-120">
-                    <img src="https://via.placeholder.com/128x128/00FF00/000000?text=Cliente+120" alt="Foto de Perfil do Cliente 120" class="w-full h-full object-cover">
+                    <img src="https://media-for2-2.cdn.whatsapp.net/v/t61.24694-24/339053089_760490395647374_8776559689050308428_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa1wGvaEip9AaGXzcwxNjXBkckjY6slVa8AkpZt3Ubbsj_oA&oe=68573FF7&_nc_sid=5e03e0&_nc_cat=111" alt="Foto de Perfil do Cliente 120" class="w-full h-full object-cover">
                 </div>
-                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">ESPAÇO</h3>
+                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">Via Pastelli</h3>
             </div>
 
             <!-- Perfil do Cliente 121 -->
             <div class="flex flex-col items-center mb-8">
                 <div class="profile-circle cursor-pointer w-32 h-32 rounded-full overflow-hidden border-4 border-[#003366] flex items-center justify-center" id="profile-circle-121">
-                    <img src="https://via.placeholder.com/128x128/00FF00/000000?text=Cliente+121" alt="Foto de Perfil do Cliente 121" class="w-full h-full object-cover">
+                    <img src="https://media-for2-2.cdn.whatsapp.net/v/t61.24694-24/473397071_584833527768696_1822918262911653279_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa1wHuqB1Vba5EnA3xVYwTgBKndr9XDY7xXai1lhIcG784JA&oe=685B162E&_nc_sid=5e03e0&_nc_cat=111" alt="Foto de Perfil do Cliente 121" class="w-full h-full object-cover">
                 </div>
-                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">ESPAÇO</h3>
+                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">Vilany Salgados</h3>
             </div>
 
             <!-- Perfil do Cliente 122 -->
             <div class="flex flex-col items-center mb-8">
                 <div class="profile-circle cursor-pointer w-32 h-32 rounded-full overflow-hidden border-4 border-[#003366] flex items-center justify-center" id="profile-circle-122">
-                    <img src="https://via.placeholder.com/128x128/00FF00/000000?text=Cliente+122" alt="Foto de Perfil do Cliente 122" class="w-full h-full object-cover">
+                    <img src="https://media-for2-2.cdn.whatsapp.net/v/t61.24694-24/417633593_937683001280844_6088020467562749781_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa1wGXxtiLwp4bn8nmVCACsqnh-lSm2Fo3uPHr1X8okf4-8A&oe=685AF64E&_nc_sid=5e03e0&_nc_cat=108" alt="Foto de Perfil do Cliente 122" class="w-full h-full object-cover">
                 </div>
-                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">ESPAÇO</h3>
+                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">Zé Delivery Camocim</h3>
             </div>
 
             <!-- Perfil do Cliente 123 -->
             <div class="flex flex-col items-center mb-8">
                 <div class="profile-circle cursor-pointer w-32 h-32 rounded-full overflow-hidden border-4 border-[#003366] flex items-center justify-center" id="profile-circle-123">
-                    <img src="https://via.placeholder.com/128x128/00FF00/000000?text=Cliente+123" alt="Foto de Perfil do Cliente 123" class="w-full h-full object-cover">
+                    <img src="https://media-for2-2.cdn.whatsapp.net/v/t61.24694-24/469082790_541031932268796_2589465299086492732_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa1wFC23ctwfFPDWgrlWzPeWq08m5hREbOtCS0lIQGVwOamQ&oe=685B2A73&_nc_sid=5e03e0&_nc_cat=111" alt="Foto de Perfil do Cliente 123" class="w-full h-full object-cover">
                 </div>
-                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">ESPAÇO</h3>
+                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">MariaR Clothes</h3>
             </div>
 
             <!-- Perfil do Cliente 124 -->
             <div class="flex flex-col items-center mb-8">
                 <div class="profile-circle cursor-pointer w-32 h-32 rounded-full overflow-hidden border-4 border-[#003366] flex items-center justify-center" id="profile-circle-124">
-                    <img src="https://via.placeholder.com/128x128/00FF00/000000?text=Cliente+124" alt="Foto de Perfil do Cliente 124" class="w-full h-full object-cover">
+                    <img src="https://media-for2-2.cdn.whatsapp.net/v/t61.24694-24/425466153_717308747182504_4427550584054322903_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa1wEcl7vctWUYVBPeE_80_h-qrSZAz-6fFrc-dhYHXDmYCA&oe=685B0837&_nc_sid=5e03e0&_nc_cat=108" alt="Foto de Perfil do Cliente 124" class="w-full h-full object-cover">
                 </div>
-                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">ESPAÇO</h3>
+                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">Boutique da Limpeza</h3>
             </div>
 
             <!-- Perfil do Cliente 125 -->
             <div class="flex flex-col items-center mb-8">
                 <div class="profile-circle cursor-pointer w-32 h-32 rounded-full overflow-hidden border-4 border-[#003366] flex items-center justify-center" id="profile-circle-125">
-                    <img src="https://via.placeholder.com/128x128/00FF00/000000?text=Cliente+125" alt="Foto de Perfil do Cliente 125" class="w-full h-full object-cover">
+                    <img src="https://media-for2-2.cdn.whatsapp.net/v/t61.24694-24/445122694_485382420618610_8174274619144563284_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa1wEPXi1NSjmedvD9R4o07zxhb80hCyHrR1N9rXoDmJNVXw&oe=685AFF51&_nc_sid=5e03e0&_nc_cat=101" alt="Foto de Perfil do Cliente 125" class="w-full h-full object-cover">
                 </div>
-                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">ESPAÇO</h3>
+                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">Smart Cell</h3>
             </div>
 
             <!-- Perfil do Cliente 126 -->
             <div class="flex flex-col items-center mb-8">
                 <div class="profile-circle cursor-pointer w-32 h-32 rounded-full overflow-hidden border-4 border-[#003366] flex items-center justify-center" id="profile-circle-126">
-                    <img src="https://via.placeholder.com/128x128/00FF00/000000?text=Cliente+126" alt="Foto de Perfil do Cliente 126" class="w-full h-full object-cover">
+                    <img src="https://media-for2-2.cdn.whatsapp.net/v/t61.24694-24/473397490_629366959440043_8178057061508732151_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa1wFyAAOaIEJ6-L_3WaKHsYOEvbyN2MM6SRSbyXSE2RiDuw&oe=685B19B7&_nc_sid=5e03e0&_nc_cat=105" alt="Foto de Perfil do Cliente 126" class="w-full h-full object-cover">
                 </div>
-                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">ESPAÇO</h3>
+                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">Feijoada da Maria</h3>
             </div>
 
             <!-- Perfil do Cliente 127 -->
             <div class="flex flex-col items-center mb-8">
                 <div class="profile-circle cursor-pointer w-32 h-32 rounded-full overflow-hidden border-4 border-[#003366] flex items-center justify-center" id="profile-circle-127">
-                    <img src="https://via.placeholder.com/128x128/00FF00/000000?text=Cliente+127" alt="Foto de Perfil do Cliente 127" class="w-full h-full object-cover">
+                    <img src="https://media-for2-2.cdn.whatsapp.net/v/t61.24694-24/486232733_601167965716910_4895212548326721196_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa1wFPGE0cfFCuwSvFm1aT-4EJKtrN7_0OHmwLFp6tlvrO7Q&oe=685B12B8&_nc_sid=5e03e0&_nc_cat=105" alt="Foto de Perfil do Cliente 127" class="w-full h-full object-cover">
                 </div>
-                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">ESPAÇO</h3>
+                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">MR</h3>
             </div>
 
             <!-- Perfil do Cliente 128 -->
             <div class="flex flex-col items-center mb-8">
                 <div class="profile-circle cursor-pointer w-32 h-32 rounded-full overflow-hidden border-4 border-[#003366] flex items-center justify-center" id="profile-circle-128">
-                    <img src="https://via.placeholder.com/128x128/00FF00/000000?text=Cliente+128" alt="Foto de Perfil do Cliente 128" class="w-full h-full object-cover">
+                    <img src="https://media-for2-2.cdn.whatsapp.net/v/t61.24694-24/491846990_755251020180939_4386355283908647679_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa1wFWhSk8tpvu-2uyvqfG-KYoluvZzBc44ZW_4v8KDXVJkQ&oe=685AFC99&_nc_sid=5e03e0&_nc_cat=104" alt="Foto de Perfil do Cliente 128" class="w-full h-full object-cover">
                 </div>
-                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">ESPAÇO</h3>
+                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">Nyki Delivery</h3>
             </div>
 
             <!-- Perfil do Cliente 129 -->
             <div class="flex flex-col items-center mb-8">
                 <div class="profile-circle cursor-pointer w-32 h-32 rounded-full overflow-hidden border-4 border-[#003366] flex items-center justify-center" id="profile-circle-129">
-                    <img src="https://via.placeholder.com/128x128/00FF00/000000?text=Cliente+129" alt="Foto de Perfil do Cliente 129" class="w-full h-full object-cover">
+                    <img src="https://media-for2-2.cdn.whatsapp.net/v/t61.24694-24/491873423_1355924892130572_7827092604214233845_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa1wEuPxqjrEIVB_x64ZfjRfmj8KpsnJ00fkMrTMDulmEZPQ&oe=685B2ECC&_nc_sid=5e03e0&_nc_cat=110" alt="Foto de Perfil do Cliente 129" class="w-full h-full object-cover">
                 </div>
-                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">ESPAÇO</h3>
+                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">Farmalê Camocim</h3>
             </div>
 
             <!-- Perfil do Cliente 130 -->
             <div class="flex flex-col items-center mb-8">
                 <div class="profile-circle cursor-pointer w-32 h-32 rounded-full overflow-hidden border-4 border-[#003366] flex items-center justify-center" id="profile-circle-130">
-                    <img src="https://via.placeholder.com/128x128/00FF00/000000?text=Cliente+130" alt="Foto de Perfil do Cliente 130" class="w-full h-full object-cover">
+                    <img src="https://media-for2-2.cdn.whatsapp.net/v/t61.24694-24/491838473_2072114076532569_6646070567750337483_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa1wGq09iiS6sfn7pxwXIhD6DZwpKKqx8IkydzHxO2GD7IuA&oe=685B2734&_nc_sid=5e03e0&_nc_cat=108" alt="Foto de Perfil do Cliente 130" class="w-full h-full object-cover">
                 </div>
-                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">ESPAÇO</h3>
+                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">Pastelê</h3>
             </div>
 
             <!-- Perfil do Cliente 131 -->
             <div class="flex flex-col items-center mb-8">
                 <div class="profile-circle cursor-pointer w-32 h-32 rounded-full overflow-hidden border-4 border-[#003366] flex items-center justify-center" id="profile-circle-131">
-                    <img src="https://via.placeholder.com/128x128/00FF00/000000?text=Cliente+131" alt="Foto de Perfil do Cliente 131" class="w-full h-full object-cover">
+                    <img src="https://media-for2-2.cdn.whatsapp.net/v/t61.24694-24/473397571_927746936108111_6566102688963945466_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa1wEaUSNJJEojh6RWzYGo_N4xj1n5eRLUKL45bosQyd3MTQ&oe=685B0CDA&_nc_sid=5e03e0&_nc_cat=109" alt="Foto de Perfil do Cliente 131" class="w-full h-full object-cover">
                 </div>
-                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">ESPAÇO</h3>
+                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">Restaeurante e Pizzaria La Plazza</h3>
             </div>
 
             <!-- Perfil do Cliente 132 -->
             <div class="flex flex-col items-center mb-8">
                 <div class="profile-circle cursor-pointer w-32 h-32 rounded-full overflow-hidden border-4 border-[#003366] flex items-center justify-center" id="profile-circle-132">
-                    <img src="https://via.placeholder.com/128x128/00FF00/000000?text=Cliente+132" alt="Foto de Perfil do Cliente 132" class="w-full h-full object-cover">
+                    <img src="https://media-for2-2.cdn.whatsapp.net/v/t61.24694-24/491875307_2867856283388300_5049848228936173277_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa1wEmigSgB7x3xrrev1e9u7_-LAuzgre3Epi7tx622LcgGw&oe=685B059C&_nc_sid=5e03e0&_nc_cat=100" alt="Foto de Perfil do Cliente 132" class="w-full h-full object-cover">
                 </div>
-                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">ESPAÇO</h3>
+                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">Loja Ponto8</h3>
             </div>
 
             <!-- Perfil do Cliente 133 -->
             <div class="flex flex-col items-center mb-8">
                 <div class="profile-circle cursor-pointer w-32 h-32 rounded-full overflow-hidden border-4 border-[#003366] flex items-center justify-center" id="profile-circle-133">
-                    <img src="https://via.placeholder.com/128x128/00FF00/000000?text=Cliente+133" alt="Foto de Perfil do Cliente 133" class="w-full h-full object-cover">
+                    <img src="https://media-for2-2.cdn.whatsapp.net/v/t61.24694-24/473396957_900556252157637_24171347373183766_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa1wGt-GNL0vOl1PXrPF6GJ--86izYOcyFjuUOokNJLMZdjg&oe=685B1113&_nc_sid=5e03e0&_nc_cat=110" alt="Foto de Perfil do Cliente 133" class="w-full h-full object-cover">
                 </div>
-                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">ESPAÇO</h3>
+                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">Ma</h3>
             </div>
 
             <!-- Perfil do Cliente 134 -->
             <div class="flex flex-col items-center mb-8">
                 <div class="profile-circle cursor-pointer w-32 h-32 rounded-full overflow-hidden border-4 border-[#003366] flex items-center justify-center" id="profile-circle-134">
-                    <img src="https://via.placeholder.com/128x128/00FF00/000000?text=Cliente+134" alt="Foto de Perfil do Cliente 134" class="w-full h-full object-cover">
+                    <img src="https://media-for2-2.cdn.whatsapp.net/v/t61.24694-24/358765670_680726493541016_8733142801034922106_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa1wHvT-BvTaS5fuxhhgj0LB0hKQvxmPuhTkf4BOcdbeDvnQ&oe=685B2BEE&_nc_sid=5e03e0&_nc_cat=104" alt="Foto de Perfil do Cliente 134" class="w-full h-full object-cover">
                 </div>
-                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">ESPAÇO</h3>
+                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">RL Store</h3>
             </div>
 
             <!-- Perfil do Cliente 135 -->
             <div class="flex flex-col items-center mb-8">
                 <div class="profile-circle cursor-pointer w-32 h-32 rounded-full overflow-hidden border-4 border-[#003366] flex items-center justify-center" id="profile-circle-135">
-                    <img src="https://via.placeholder.com/128x128/00FF00/000000?text=Cliente+135" alt="Foto de Perfil do Cliente 135" class="w-full h-full object-cover">
+                    <img src="https://media-for2-2.cdn.whatsapp.net/v/t61.24694-24/473406843_1016872463823936_4692388262190083639_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa1wGbosWQLhY0s--NkZhcv6UiflufyA6OP5wZb4lgUwXamg&oe=685B275F&_nc_sid=5e03e0&_nc_cat=100" alt="Foto de Perfil do Cliente 135" class="w-full h-full object-cover">
                 </div>
-                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">ESPAÇO</h3>
+                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">Drogaria Ultra popular camocim-Ce</h3>
             </div>
 
             <!-- Perfil do Cliente 136 -->
             <div class="flex flex-col items-center mb-8">
                 <div class="profile-circle cursor-pointer w-32 h-32 rounded-full overflow-hidden border-4 border-[#003366] flex items-center justify-center" id="profile-circle-136">
-                    <img src="https://via.placeholder.com/128x128/00FF00/000000?text=Cliente+136" alt="Foto de Perfil do Cliente 136" class="w-full h-full object-cover">
+                    <img src="https://media-for2-2.cdn.whatsapp.net/v/t61.24694-24/440792581_275033892335147_6414141134616648294_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa1wG_-Ki61t59HYldBvVzRgb0iRGSxRN-uIgbb5q8O7WtUQ&oe=685AFFCD&_nc_sid=5e03e0&_nc_cat=102" alt="Foto de Perfil do Cliente 136" class="w-full h-full object-cover">
                 </div>
-                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">ESPAÇO</h3>
+                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">Graficam Gráfica Camocim</h3>
             </div>
 
             <!-- Perfil do Cliente 137 -->
             <div class="flex flex-col items-center mb-8">
                 <div class="profile-circle cursor-pointer w-32 h-32 rounded-full overflow-hidden border-4 border-[#003366] flex items-center justify-center" id="profile-circle-137">
-                    <img src="https://via.placeholder.com/128x128/00FF00/000000?text=Cliente+137" alt="Foto de Perfil do Cliente 137" class="w-full h-full object-cover">
+                    <img src="https://media-for2-2.cdn.whatsapp.net/v/t61.24694-24/439328315_830809982259158_3860675635748524626_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa1wHcBaZn-l2USiU6oa7sxWacMrIxl_ZuaWLfn-_m9m3QLg&oe=685B2081&_nc_sid=5e03e0&_nc_cat=106" alt="Foto de Perfil do Cliente 137" class="w-full h-full object-cover">
                 </div>
-                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">ESPAÇO</h3>
+                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">Will Fit Suplementos</h3>
             </div>
 
             <!-- Perfil do Cliente 138 -->
             <div class="flex flex-col items-center mb-8">
                 <div class="profile-circle cursor-pointer w-32 h-32 rounded-full overflow-hidden border-4 border-[#003366] flex items-center justify-center" id="profile-circle-138">
-                    <img src="https://via.placeholder.com/128x128/00FF00/000000?text=Cliente+138" alt="Foto de Perfil do Cliente 138" class="w-full h-full object-cover">
+                    <img src="https://media-for2-2.cdn.whatsapp.net/v/t61.24694-24/382249386_736881368454841_5522054093117973340_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa1wGEVLgpLzkhuoEaTTY3gy121vc-pPtoLdmmtONtIK0X8g&oe=685B317F&_nc_sid=5e03e0&_nc_cat=111" alt="Foto de Perfil do Cliente 138" class="w-full h-full object-cover">
                 </div>
-                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">ESPAÇO</h3>
+                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">XTimports</h3>
             </div>
 
             <!-- Perfil do Cliente 139 -->
             <div class="flex flex-col items-center mb-8">
                 <div class="profile-circle cursor-pointer w-32 h-32 rounded-full overflow-hidden border-4 border-[#003366] flex items-center justify-center" id="profile-circle-139">
-                    <img src="https://via.placeholder.com/128x128/00FF00/000000?text=Cliente+139" alt="Foto de Perfil do Cliente 139" class="w-full h-full object-cover">
+                    <img src="https://media-for2-2.cdn.whatsapp.net/v/t61.24694-24/486682702_599506863251513_4525417777431120821_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa1wGuuLEslG6C781e_CcaablogIdbdiAZf74P5sATza97SQ&oe=685B244C&_nc_sid=5e03e0&_nc_cat=111" alt="Foto de Perfil do Cliente 139" class="w-full h-full object-cover">
                 </div>
-                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">ESPAÇO</h3>
+                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">Alô Pizzas</h3>
             </div>
 
             <!-- Perfil do Cliente 140 -->
             <div class="flex flex-col items-center mb-8">
                 <div class="profile-circle cursor-pointer w-32 h-32 rounded-full overflow-hidden border-4 border-[#003366] flex items-center justify-center" id="profile-circle-140">
-                    <img src="https://via.placeholder.com/128x128/00FF00/000000?text=Cliente+140" alt="Foto de Perfil do Cliente 140" class="w-full h-full object-cover">
+                    <img src="https://media-for2-2.cdn.whatsapp.net/v/t61.24694-24/467878538_450253838111570_3199113086785833943_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa1wG4kqCQrppReE6xs3gyFgcA7MuE8_xZTKl0kbXjyLQmTg&oe=685B182B&_nc_sid=5e03e0&_nc_cat=107" alt="Foto de Perfil do Cliente 140" class="w-full h-full object-cover">
                 </div>
-                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">ESPAÇO</h3>
+                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">Farmácia Nova Esperança</h3>
             </div>
 
             <!-- Perfil do Cliente 141 -->
             <div class="flex flex-col items-center mb-8">
                 <div class="profile-circle cursor-pointer w-32 h-32 rounded-full overflow-hidden border-4 border-[#003366] flex items-center justify-center" id="profile-circle-141">
-                    <img src="https://via.placeholder.com/128x128/00FF00/000000?text=Cliente+141" alt="Foto de Perfil do Cliente 141" class="w-full h-full object-cover">
+                    <img src="https://media-for2-2.cdn.whatsapp.net/v/t61.24694-24/425167861_717406800378540_7072501727742080653_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa1wEehRxRbzmzc2QjMXqBMZY3rBpEm79kLPivtUbM-FKcRA&oe=685B13D1&_nc_sid=5e03e0&_nc_cat=107" alt="Foto de Perfil do Cliente 141" class="w-full h-full object-cover">
                 </div>
-                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">ESPAÇO</h3>
+                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">Empório Camocim produtos Naturais</h3>
             </div>
 
             <!-- Perfil do Cliente 142 -->
             <div class="flex flex-col items-center mb-8">
                 <div class="profile-circle cursor-pointer w-32 h-32 rounded-full overflow-hidden border-4 border-[#003366] flex items-center justify-center" id="profile-circle-142">
-                    <img src="https://via.placeholder.com/128x128/00FF00/000000?text=Cliente+142" alt="Foto de Perfil do Cliente 142" class="w-full h-full object-cover">
+                    <img src="https://media-for2-2.cdn.whatsapp.net/v/t61.24694-24/409372302_1392866878288306_387238718786423699_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa1wFdHL30yVkVMKcgEEnw07t94rQxrBXFHNitFdpj-8XzlQ&oe=685B24C9&_nc_sid=5e03e0&_nc_cat=107" alt="Foto de Perfil do Cliente 142" class="w-full h-full object-cover">
                 </div>
-                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">ESPAÇO</h3>
+                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">Variant</h3>
             </div>
 
             <!-- Perfil do Cliente 143 -->
             <div class="flex flex-col items-center mb-8">
                 <div class="profile-circle cursor-pointer w-32 h-32 rounded-full overflow-hidden border-4 border-[#003366] flex items-center justify-center" id="profile-circle-143">
-                    <img src="https://via.placeholder.com/128x128/00FF00/000000?text=Cliente+143" alt="Foto de Perfil do Cliente 143" class="w-full h-full object-cover">
+                    <img src="https://media-for2-2.cdn.whatsapp.net/v/t61.24694-24/490856456_1219939676378494_3181554905262178515_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa1wERrQfHVD4ZgbiF0gwRErFUYfugYrSqNxc35ALnFgHNpg&oe=685B1216&_nc_sid=5e03e0&_nc_cat=111" alt="Foto de Perfil do Cliente 143" class="w-full h-full object-cover">
                 </div>
-                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">ESPAÇO</h3>
+                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">Farias Burger</h3>
             </div>
 
             <!-- Perfil do Cliente 144 -->
             <div class="flex flex-col items-center mb-8">
                 <div class="profile-circle cursor-pointer w-32 h-32 rounded-full overflow-hidden border-4 border-[#003366] flex items-center justify-center" id="profile-circle-144">
-                    <img src="https://via.placeholder.com/128x128/00FF00/000000?text=Cliente+144" alt="Foto de Perfil do Cliente 144" class="w-full h-full object-cover">
+                    <img src="https://media-for2-2.cdn.whatsapp.net/v/t61.24694-24/158154758_116701463824938_188332058675994994_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa1wFEu0Avp4bweXHeyX625QDudqiCyp68YQwKDs09TF125Q&oe=685B430F&_nc_sid=5e03e0&_nc_cat=100" alt="Foto de Perfil do Cliente 144" class="w-full h-full object-cover">
                 </div>
-                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">ESPAÇO</h3>
+                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">Feijoada da Rafa</h3>
             </div>
 
             <!-- Perfil do Cliente 145 -->
             <div class="flex flex-col items-center mb-8">
                 <div class="profile-circle cursor-pointer w-32 h-32 rounded-full overflow-hidden border-4 border-[#003366] flex items-center justify-center" id="profile-circle-145">
-                    <img src="https://via.placeholder.com/128x128/00FF00/000000?text=Cliente+145" alt="Foto de Perfil do Cliente 145" class="w-full h-full object-cover">
+                    <img src="https://media-for2-2.cdn.whatsapp.net/v/t61.24694-24/300363743_750967672656753_147372617124198231_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa1wF07DIsHd9P1nNEo2PZEIqobr-6JBUDZsmaLXWjqsCEmg&oe=685B13DF&_nc_sid=5e03e0&_nc_cat=108" alt="Foto de Perfil do Cliente 145" class="w-full h-full object-cover">
                 </div>
-                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">ESPAÇO</h3>
+                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">Authoral Gastrobar</h3>
             </div>
 
             <!-- Perfil do Cliente 146 -->
             <div class="flex flex-col items-center mb-8">
                 <div class="profile-circle cursor-pointer w-32 h-32 rounded-full overflow-hidden border-4 border-[#003366] flex items-center justify-center" id="profile-circle-146">
-                    <img src="https://via.placeholder.com/128x128/00FF00/000000?text=Cliente+146" alt="Foto de Perfil do Cliente 146" class="w-full h-full object-cover">
+                    <img src="https://media-for2-2.cdn.whatsapp.net/v/t61.24694-24/432438124_1629073814528151_8238456394115443537_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa1wFnhCOdtTgUDwBj5ewXYA4M1FRf6KhX_X9TmcSMLm6f9Q&oe=685B1F18&_nc_sid=5e03e0&_nc_cat=108" alt="Foto de Perfil do Cliente 146" class="w-full h-full object-cover">
                 </div>
-                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">ESPAÇO</h3>
+                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">Pronto do Camarão Camocim</h3>
             </div>
 
             <!-- Perfil do Cliente 147 -->
             <div class="flex flex-col items-center mb-8">
                 <div class="profile-circle cursor-pointer w-32 h-32 rounded-full overflow-hidden border-4 border-[#003366] flex items-center justify-center" id="profile-circle-147">
-                    <img src="https://via.placeholder.com/128x128/00FF00/000000?text=Cliente+147" alt="Foto de Perfil do Cliente 147" class="w-full h-full object-cover">
+                    <img src="https://media-for2-2.cdn.whatsapp.net/v/t61.24694-24/505884044_1057539069638782_1611148612672282529_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa1wEy5_N1hIhEoz8aVzSuR91dYpBJi1mNZfDyr4Vvlgc17Q&oe=685B238A&_nc_sid=5e03e0&_nc_cat=109" alt="Foto de Perfil do Cliente 147" class="w-full h-full object-cover">
                 </div>
-                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">ESPAÇO</h3>
+                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">Caserinhos Da Família</h3>
             </div>
 
             <!-- Perfil do Cliente 148 -->
             <div class="flex flex-col items-center mb-8">
                 <div class="profile-circle cursor-pointer w-32 h-32 rounded-full overflow-hidden border-4 border-[#003366] flex items-center justify-center" id="profile-circle-148">
-                    <img src="https://via.placeholder.com/128x128/00FF00/000000?text=Cliente+148" alt="Foto de Perfil do Cliente 148" class="w-full h-full object-cover">
+                    <img src="https://media-for2-2.cdn.whatsapp.net/v/t61.24694-24/465380672_1060316972087072_5716169305882120456_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa1wEoajWXq9YikvK47or9-U-IVSzf57hesOkZPFp1z7hT0g&oe=685B1D2D&_nc_sid=5e03e0&_nc_cat=106" alt="Foto de Perfil do Cliente 148" class="w-full h-full object-cover">
                 </div>
-                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">ESPAÇO</h3>
+                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">Doce Pudim</h3>
             </div>
 
             <!-- Perfil do Cliente 149 -->
             <div class="flex flex-col items-center mb-8">
                 <div class="profile-circle cursor-pointer w-32 h-32 rounded-full overflow-hidden border-4 border-[#003366] flex items-center justify-center" id="profile-circle-149">
-                    <img src="https://via.placeholder.com/128x128/00FF00/000000?text=Cliente+149" alt="Foto de Perfil do Cliente 149" class="w-full h-full object-cover">
+                    <img src="https://media-for2-2.cdn.whatsapp.net/v/t61.24694-24/491875931_1399411477767524_7784627984393636842_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa1wFuHK6UKKDPjxoEhbuSQV6P9uy-RmU_EcqUiAHk13ojOA&oe=685738AE&_nc_sid=5e03e0&_nc_cat=109" alt="Foto de Perfil do Cliente 149" class="w-full h-full object-cover">
                 </div>
-                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">ESPAÇO</h3>
+                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">Cacau Show  Camocim</h3>
             </div>
 
             <!-- Perfil do Cliente 150 -->
             <div class="flex flex-col items-center mb-8">
                 <div class="profile-circle cursor-pointer w-32 h-32 rounded-full overflow-hidden border-4 border-[#003366] flex items-center justify-center" id="profile-circle-150">
-                    <img src="https://via.placeholder.com/128x128/00FF00/000000?text=Cliente+150" alt="Foto de Perfil do Cliente 150" class="w-full h-full object-cover">
+                    <img src="https://media-for2-2.cdn.whatsapp.net/v/t61.24694-24/422382397_740504844629754_4451415728976238532_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa1wEnp8bjsTUfd9-5em9XSq2Qjzg_gagDC_yj2hmWcOGoqQ&oe=68574ABD&_nc_sid=5e03e0&_nc_cat=111" alt="Foto de Perfil do Cliente 150" class="w-full h-full object-cover">
                 </div>
-                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">ESPAÇO</h3>
+                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">Macarrão Expresso</h3>
             </div>
 
             <!-- Perfil do Cliente 151 -->
             <div class="flex flex-col items-center mb-8">
                 <div class="profile-circle cursor-pointer w-32 h-32 rounded-full overflow-hidden border-4 border-[#003366] flex items-center justify-center" id="profile-circle-151">
-                    <img src="https://via.placeholder.com/128x128/00FF00/000000?text=Cliente+151" alt="Foto de Perfil do Cliente 151" class="w-full h-full object-cover">
+                    <img src="https://media-for2-2.cdn.whatsapp.net/v/t61.24694-24/473401610_1253159299119225_2114602007945258675_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa1wG42cMDXcqNcPsBeSFrCO0O8_-Ib5Z7xEvPynPjN1agFw&oe=68573D14&_nc_sid=5e03e0&_nc_cat=102" alt="Foto de Perfil do Cliente 151" class="w-full h-full object-cover">
                 </div>
-                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">ESPAÇO</h3>
+                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">Clínica Bioesthetic</h3>
             </div>
 
             <!-- Perfil do Cliente 152 -->
             <div class="flex flex-col items-center mb-8">
                 <div class="profile-circle cursor-pointer w-32 h-32 rounded-full overflow-hidden border-4 border-[#003366] flex items-center justify-center" id="profile-circle-152">
-                    <img src="https://via.placeholder.com/128x128/00FF00/000000?text=Cliente+152" alt="Foto de Perfil do Cliente 152" class="w-full h-full object-cover">
+                    <img src="https://media-for2-2.cdn.whatsapp.net/v/t61.24694-24/328307141_1566527760499002_3452145422887385341_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa1wG1ZKz7d7KoRDAOhCB2wtSElfjGNryvGqyxiebrIosCpA&oe=68572C0A&_nc_sid=5e03e0&_nc_cat=103" alt="Foto de Perfil do Cliente 152" class="w-full h-full object-cover">
                 </div>
-                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">ESPAÇO</h3>
+                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">Onda do Mar</h3>
             </div>
 
             <!-- Perfil do Cliente 153 -->
             <div class="flex flex-col items-center mb-8">
                 <div class="profile-circle cursor-pointer w-32 h-32 rounded-full overflow-hidden border-4 border-[#003366] flex items-center justify-center" id="profile-circle-153">
-                    <img src="https://via.placeholder.com/128x128/00FF00/000000?text=Cliente+153" alt="Foto de Perfil do Cliente 153" class="w-full h-full object-cover">
+                    <img src="https://media-for2-2.cdn.whatsapp.net/v/t61.24694-24/343921667_235282555776253_2937350780175004253_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa1wEJ2IFGUtl4TF180P7KGi9ofu9BInqaX8d1oXvyGKaa0w&oe=68575DE5&_nc_sid=5e03e0&_nc_cat=103" alt="Foto de Perfil do Cliente 153" class="w-full h-full object-cover">
                 </div>
-                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">ESPAÇO</h3>
+                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">Sal & Pimenta</h3>
             </div>
 
             <!-- Perfil do Cliente 154 -->
             <div class="flex flex-col items-center mb-8">
                 <div class="profile-circle cursor-pointer w-32 h-32 rounded-full overflow-hidden border-4 border-[#003366] flex items-center justify-center" id="profile-circle-154">
-                    <img src="https://via.placeholder.com/128x128/00FF00/000000?text=Cliente+154" alt="Foto de Perfil do Cliente 154" class="w-full h-full object-cover">
+                    <img src="https://media-for2-2.cdn.whatsapp.net/v/t61.24694-24/473407888_519669813860828_8051443836473268660_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa1wHEEOe6TvUEgwRtKgk_AIYVmJufWC-mqBaVU0Jegh-vPA&oe=68575DF9&_nc_sid=5e03e0&_nc_cat=102" alt="Foto de Perfil do Cliente 154" class="w-full h-full object-cover">
                 </div>
-                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">ESPAÇO</h3>
+                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">Goutec Cell(Sousa)</h3>
             </div>
 
             <!-- Perfil do Cliente 155 -->
             <div class="flex flex-col items-center mb-8">
                 <div class="profile-circle cursor-pointer w-32 h-32 rounded-full overflow-hidden border-4 border-[#003366] flex items-center justify-center" id="profile-circle-155">
-                    <img src="https://via.placeholder.com/128x128/00FF00/000000?text=Cliente+155" alt="Foto de Perfil do Cliente 155" class="w-full h-full object-cover">
+                    <img src="https://media-for2-2.cdn.whatsapp.net/v/t61.24694-24/371041438_990584018848232_3829633751680843595_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa1wHgbXOntGBdflUuA33kjEUFXJlke0YJJ2h96X6dVY3s_g&oe=68573941&_nc_sid=5e03e0&_nc_cat=106" alt="Foto de Perfil do Cliente 155" class="w-full h-full object-cover">
                 </div>
-                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">ESPAÇO</h3>
+                <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">Meu Açai Camocim</h3>
             </div>
+<!---------------------------------------------------------------
 
-            <!-- Perfil do Cliente 156 -->
+
+
+
             <div class="flex flex-col items-center mb-8">
                 <div class="profile-circle cursor-pointer w-32 h-32 rounded-full overflow-hidden border-4 border-[#003366] flex items-center justify-center" id="profile-circle-156">
                     <img src="https://via.placeholder.com/128x128/00FF00/000000?text=Cliente+156" alt="Foto de Perfil do Cliente 156" class="w-full h-full object-cover">
@@ -1454,7 +1530,7 @@
                 <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">ESPAÇO</h3>
             </div>
 
-            <!-- Perfil do Cliente 157 -->
+
             <div class="flex flex-col items-center mb-8">
                 <div class="profile-circle cursor-pointer w-32 h-32 rounded-full overflow-hidden border-4 border-[#003366] flex items-center justify-center" id="profile-circle-157">
                     <img src="https://via.placeholder.com/128x128/00FF00/000000?text=Cliente+157" alt="Foto de Perfil do Cliente 157" class="w-full h-full object-cover">
@@ -1462,7 +1538,7 @@
                 <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">ESPAÇO</h3>
             </div>
 
-            <!-- Perfil do Cliente 158 -->
+
             <div class="flex flex-col items-center mb-8">
                 <div class="profile-circle cursor-pointer w-32 h-32 rounded-full overflow-hidden border-4 border-[#003366] flex items-center justify-center" id="profile-circle-158">
                     <img src="https://via.placeholder.com/128x128/00FF00/000000?text=Cliente+158" alt="Foto de Perfil do Cliente 158" class="w-full h-full object-cover">
@@ -1470,7 +1546,7 @@
                 <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">ESPAÇO</h3>
             </div>
 
-            <!-- Perfil do Cliente 159 -->
+            
             <div class="flex flex-col items-center mb-8">
                 <div class="profile-circle cursor-pointer w-32 h-32 rounded-full overflow-hidden border-4 border-[#003366] flex items-center justify-center" id="profile-circle-159">
                     <img src="https://via.placeholder.com/128x128/00FF00/000000?text=Cliente+159" alt="Foto de Perfil do Cliente 159" class="w-full h-full object-cover">
@@ -1478,7 +1554,7 @@
                 <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">ESPAÇO</h3>
             </div>
 
-            <!-- Perfil do Cliente 160 -->
+            
             <div class="flex flex-col items-center mb-8">
                 <div class="profile-circle cursor-pointer w-32 h-32 rounded-full overflow-hidden border-4 border-[#003366] flex items-center justify-center" id="profile-circle-160">
                     <img src="https://via.placeholder.com/128x128/00FF00/000000?text=Cliente+160" alt="Foto de Perfil do Cliente 160" class="w-full h-full object-cover">
@@ -1486,7 +1562,7 @@
                 <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">ESPAÇO</h3>
             </div>
 
-            <!-- Perfil do Cliente 161 -->
+            
             <div class="flex flex-col items-center mb-8">
                 <div class="profile-circle cursor-pointer w-32 h-32 rounded-full overflow-hidden border-4 border-[#003366] flex items-center justify-center" id="profile-circle-161">
                     <img src="https://via.placeholder.com/128x128/00FF00/000000?text=Cliente+161" alt="Foto de Perfil do Cliente 161" class="w-full h-full object-cover">
@@ -1494,7 +1570,7 @@
                 <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">ESPAÇO</h3>
             </div>
 
-            <!-- Perfil do Cliente 162 -->
+           
             <div class="flex flex-col items-center mb-8">
                 <div class="profile-circle cursor-pointer w-32 h-32 rounded-full overflow-hidden border-4 border-[#003366] flex items-center justify-center" id="profile-circle-162">
                     <img src="https://via.placeholder.com/128x128/00FF00/000000?text=Cliente+162" alt="Foto de Perfil do Cliente 162" class="w-full h-full object-cover">
@@ -1502,7 +1578,7 @@
                 <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">ESPAÇO</h3>
             </div>
 
-            <!-- Perfil do Cliente 163 -->
+           
             <div class="flex flex-col items-center mb-8">
                 <div class="profile-circle cursor-pointer w-32 h-32 rounded-full overflow-hidden border-4 border-[#003366] flex items-center justify-center" id="profile-circle-163">
                     <img src="https://via.placeholder.com/128x128/00FF00/000000?text=Cliente+163" alt="Foto de Perfil do Cliente 163" class="w-full h-full object-cover">
@@ -1510,7 +1586,7 @@
                 <h3 class="mt-4 font-semibold text-lg text-[#003366] text-center">ESPAÇO</h3>
             </div>
 
-            <!-- Perfil do Cliente 164 -->
+            
             <div class="flex flex-col items-center mb-8">
                 <div class="profile-circle cursor-pointer w-32 h-32 rounded-full overflow-hidden border-4 border-[#003366] flex items-center justify-center" id="profile-circle-164">
                     <img src="https://via.placeholder.com/128x128/00FF00/000000?text=Cliente+164" alt="Foto de Perfil do Cliente 164" class="w-full h-full object-cover">
@@ -2474,7 +2550,7 @@
                         </div>
                 </div>
             </section>
-
+-->
             <!------------------------------------------------------>
 
             <div id="modal-1" class="fixed inset-0 bg-gray-600 bg-opacity-50 flex items-center justify-center z-50 hidden">
@@ -7206,7 +7282,7 @@
    </div>
   </div>
  </div>
- 
+
  <div id="modal-117" class="fixed inset-0 bg-gray-600 bg-opacity-50 flex items-center justify-center z-50 hidden">
   <div class="bg-white p-6 rounded-lg shadow-lg relative w-full max-w-md mx-4 md:mx-auto">
    <button class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-2xl font-bold" onclick="closeModal('modal-117')">&times;</button>
@@ -7221,7 +7297,7 @@
       </div>
       <div>
        <p class="text-sm text-gray-500">Nome</p>
-       <p class="font-medium">Empório lanches Fast Food</p>
+       <p class="font-medium">Temake Sushimar</p>
       </div>
      </div>
      <div class="flex items-center">
@@ -7232,11 +7308,11 @@
       </div>
       <div>
        <p class="text-sm text-gray-500">Telefone</p>
-       <p class="font-medium">88 9.9340-4371</p>
+       <p class="font-medium">88 9.9930-4310</p>
       </div>
      </div>
      <div class="pt-4">
-      <a href="https://wa.me/5588993404371" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
+      <a href="https://wa.me/5588999304310" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="white" viewBox="0 0 24 24">
         <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
        </svg>
@@ -7247,6 +7323,7 @@
    </div>
   </div>
  </div>
+
  <div id="modal-118" class="fixed inset-0 bg-gray-600 bg-opacity-50 flex items-center justify-center z-50 hidden">
   <div class="bg-white p-6 rounded-lg shadow-lg relative w-full max-w-md mx-4 md:mx-auto">
    <button class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-2xl font-bold" onclick="closeModal('modal-118')">&times;</button>
@@ -7261,7 +7338,7 @@
       </div>
       <div>
        <p class="text-sm text-gray-500">Nome</p>
-       <p class="font-medium">Empório lanches Fast Food</p>
+       <p class="font-medium">Tok & Glamour - Jóias e Acessórios</p>
       </div>
      </div>
      <div class="flex items-center">
@@ -7272,11 +7349,11 @@
       </div>
       <div>
        <p class="text-sm text-gray-500">Telefone</p>
-       <p class="font-medium">88 9.9340-4371</p>
+       <p class="font-medium">88 9.9229-8674</p>
       </div>
      </div>
      <div class="pt-4">
-      <a href="https://wa.me/5588993404371" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
+      <a href="https://wa.me/5588992298674" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="white" viewBox="0 0 24 24">
         <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
        </svg>
@@ -7287,6 +7364,7 @@
    </div>
   </div>
  </div>
+
  <div id="modal-119" class="fixed inset-0 bg-gray-600 bg-opacity-50 flex items-center justify-center z-50 hidden">
   <div class="bg-white p-6 rounded-lg shadow-lg relative w-full max-w-md mx-4 md:mx-auto">
    <button class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-2xl font-bold" onclick="closeModal('modal-119')">&times;</button>
@@ -7301,7 +7379,7 @@
       </div>
       <div>
        <p class="text-sm text-gray-500">Nome</p>
-       <p class="font-medium">Empório lanches Fast Food</p>
+       <p class="font-medium">ValCoffee</p>
       </div>
      </div>
      <div class="flex items-center">
@@ -7312,11 +7390,11 @@
       </div>
       <div>
        <p class="text-sm text-gray-500">Telefone</p>
-       <p class="font-medium">88 9.9340-4371</p>
+       <p class="font-medium">88 9.8161-6774</p>
       </div>
      </div>
      <div class="pt-4">
-      <a href="https://wa.me/5588993404371" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
+      <a href="https://wa.me/5588981616774" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="white" viewBox="0 0 24 24">
         <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
        </svg>
@@ -7327,6 +7405,7 @@
    </div>
   </div>
  </div>
+
  <div id="modal-120" class="fixed inset-0 bg-gray-600 bg-opacity-50 flex items-center justify-center z-50 hidden">
   <div class="bg-white p-6 rounded-lg shadow-lg relative w-full max-w-md mx-4 md:mx-auto">
    <button class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-2xl font-bold" onclick="closeModal('modal-120')">&times;</button>
@@ -7341,7 +7420,7 @@
       </div>
       <div>
        <p class="text-sm text-gray-500">Nome</p>
-       <p class="font-medium">Empório lanches Fast Food</p>
+       <p class="font-medium">Via Pastelli</p>
       </div>
      </div>
      <div class="flex items-center">
@@ -7352,11 +7431,11 @@
       </div>
       <div>
        <p class="text-sm text-gray-500">Telefone</p>
-       <p class="font-medium">88 9.9340-4371</p>
+       <p class="font-medium">88 9.9742-7042</p>
       </div>
      </div>
      <div class="pt-4">
-      <a href="https://wa.me/5588993404371" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
+      <a href="https://wa.me/5588997427042" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="white" viewBox="0 0 24 24">
         <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
        </svg>
@@ -7367,6 +7446,7 @@
    </div>
   </div>
  </div>
+
  <div id="modal-121" class="fixed inset-0 bg-gray-600 bg-opacity-50 flex items-center justify-center z-50 hidden">
   <div class="bg-white p-6 rounded-lg shadow-lg relative w-full max-w-md mx-4 md:mx-auto">
    <button class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-2xl font-bold" onclick="closeModal('modal-121')">&times;</button>
@@ -7381,7 +7461,7 @@
       </div>
       <div>
        <p class="text-sm text-gray-500">Nome</p>
-       <p class="font-medium">Empório lanches Fast Food</p>
+       <p class="font-medium">Vilany Salgados</p>
       </div>
      </div>
      <div class="flex items-center">
@@ -7392,11 +7472,11 @@
       </div>
       <div>
        <p class="text-sm text-gray-500">Telefone</p>
-       <p class="font-medium">88 9.9340-4371</p>
+       <p class="font-medium">88 9.9254-3006</p>
       </div>
      </div>
      <div class="pt-4">
-      <a href="https://wa.me/5588993404371" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
+      <a href="https://wa.me/5588992543006" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="white" viewBox="0 0 24 24">
         <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
        </svg>
@@ -7407,6 +7487,7 @@
    </div>
   </div>
  </div>
+
  <div id="modal-122" class="fixed inset-0 bg-gray-600 bg-opacity-50 flex items-center justify-center z-50 hidden">
   <div class="bg-white p-6 rounded-lg shadow-lg relative w-full max-w-md mx-4 md:mx-auto">
    <button class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-2xl font-bold" onclick="closeModal('modal-122')">&times;</button>
@@ -7421,7 +7502,7 @@
       </div>
       <div>
        <p class="text-sm text-gray-500">Nome</p>
-       <p class="font-medium">Empório lanches Fast Food</p>
+       <p class="font-medium">Zé Delivery Camocim</p>
       </div>
      </div>
      <div class="flex items-center">
@@ -7432,11 +7513,11 @@
       </div>
       <div>
        <p class="text-sm text-gray-500">Telefone</p>
-       <p class="font-medium">88 9.9340-4371</p>
+       <p class="font-medium">88 9.9416-4853</p>
       </div>
      </div>
      <div class="pt-4">
-      <a href="https://wa.me/5588993404371" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
+      <a href="https://wa.me/5588994164853" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="white" viewBox="0 0 24 24">
         <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
        </svg>
@@ -7447,6 +7528,7 @@
    </div>
   </div>
  </div>
+
  <div id="modal-123" class="fixed inset-0 bg-gray-600 bg-opacity-50 flex items-center justify-center z-50 hidden">
   <div class="bg-white p-6 rounded-lg shadow-lg relative w-full max-w-md mx-4 md:mx-auto">
    <button class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-2xl font-bold" onclick="closeModal('modal-123')">&times;</button>
@@ -7461,7 +7543,7 @@
       </div>
       <div>
        <p class="text-sm text-gray-500">Nome</p>
-       <p class="font-medium">Empório lanches Fast Food</p>
+       <p class="font-medium">MariaR Clothes</p>
       </div>
      </div>
      <div class="flex items-center">
@@ -7472,11 +7554,11 @@
       </div>
       <div>
        <p class="text-sm text-gray-500">Telefone</p>
-       <p class="font-medium">88 9.9340-4371</p>
+       <p class="font-medium">85 9.9135-4813</p>
       </div>
      </div>
      <div class="pt-4">
-      <a href="https://wa.me/5588993404371" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
+      <a href="https://wa.me/5585991354813" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="white" viewBox="0 0 24 24">
         <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
        </svg>
@@ -7487,6 +7569,7 @@
    </div>
   </div>
  </div>
+
  <div id="modal-124" class="fixed inset-0 bg-gray-600 bg-opacity-50 flex items-center justify-center z-50 hidden">
   <div class="bg-white p-6 rounded-lg shadow-lg relative w-full max-w-md mx-4 md:mx-auto">
    <button class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-2xl font-bold" onclick="closeModal('modal-124')">&times;</button>
@@ -7501,7 +7584,7 @@
       </div>
       <div>
        <p class="text-sm text-gray-500">Nome</p>
-       <p class="font-medium">Empório lanches Fast Food</p>
+       <p class="font-medium">Boutique da Limpeza </p>
       </div>
      </div>
      <div class="flex items-center">
@@ -7512,11 +7595,11 @@
       </div>
       <div>
        <p class="text-sm text-gray-500">Telefone</p>
-       <p class="font-medium">88 9.9340-4371</p>
+       <p class="font-medium">85 9.9846-5044</p>
       </div>
      </div>
      <div class="pt-4">
-      <a href="https://wa.me/5588993404371" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
+      <a href="https://wa.me/5585998465044" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="white" viewBox="0 0 24 24">
         <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
        </svg>
@@ -7527,6 +7610,7 @@
    </div>
   </div>
  </div>
+
  <div id="modal-125" class="fixed inset-0 bg-gray-600 bg-opacity-50 flex items-center justify-center z-50 hidden">
   <div class="bg-white p-6 rounded-lg shadow-lg relative w-full max-w-md mx-4 md:mx-auto">
    <button class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-2xl font-bold" onclick="closeModal('modal-125')">&times;</button>
@@ -7541,7 +7625,7 @@
       </div>
       <div>
        <p class="text-sm text-gray-500">Nome</p>
-       <p class="font-medium">Empório lanches Fast Food</p>
+       <p class="font-medium">Smart Cell</p>
       </div>
      </div>
      <div class="flex items-center">
@@ -7552,11 +7636,11 @@
       </div>
       <div>
        <p class="text-sm text-gray-500">Telefone</p>
-       <p class="font-medium">88 9.9340-4371</p>
+       <p class="font-medium">88 9.8111-2439</p>
       </div>
      </div>
      <div class="pt-4">
-      <a href="https://wa.me/5588993404371" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
+      <a href="https://wa.me/5588981112439" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="white" viewBox="0 0 24 24">
         <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
        </svg>
@@ -7567,6 +7651,7 @@
    </div>
   </div>
  </div>
+
  <div id="modal-126" class="fixed inset-0 bg-gray-600 bg-opacity-50 flex items-center justify-center z-50 hidden">
   <div class="bg-white p-6 rounded-lg shadow-lg relative w-full max-w-md mx-4 md:mx-auto">
    <button class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-2xl font-bold" onclick="closeModal('modal-126')">&times;</button>
@@ -7581,7 +7666,7 @@
       </div>
       <div>
        <p class="text-sm text-gray-500">Nome</p>
-       <p class="font-medium">Empório lanches Fast Food</p>
+       <p class="font-medium">Feijoada da Maria </p>
       </div>
      </div>
      <div class="flex items-center">
@@ -7592,11 +7677,11 @@
       </div>
       <div>
        <p class="text-sm text-gray-500">Telefone</p>
-       <p class="font-medium">88 9.9340-4371</p>
+       <p class="font-medium">88 9.9203-0071</p>
       </div>
      </div>
      <div class="pt-4">
-      <a href="https://wa.me/5588993404371" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
+      <a href="https://wa.me/5588992030071" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="white" viewBox="0 0 24 24">
         <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
        </svg>
@@ -7607,6 +7692,7 @@
    </div>
   </div>
  </div>
+
  <div id="modal-127" class="fixed inset-0 bg-gray-600 bg-opacity-50 flex items-center justify-center z-50 hidden">
   <div class="bg-white p-6 rounded-lg shadow-lg relative w-full max-w-md mx-4 md:mx-auto">
    <button class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-2xl font-bold" onclick="closeModal('modal-127')">&times;</button>
@@ -7621,7 +7707,7 @@
       </div>
       <div>
        <p class="text-sm text-gray-500">Nome</p>
-       <p class="font-medium">Empório lanches Fast Food</p>
+       <p class="font-medium">MR</p>
       </div>
      </div>
      <div class="flex items-center">
@@ -7632,11 +7718,11 @@
       </div>
       <div>
        <p class="text-sm text-gray-500">Telefone</p>
-       <p class="font-medium">88 9.9340-4371</p>
+       <p class="font-medium">88 9.9203-4500</p>
       </div>
      </div>
      <div class="pt-4">
-      <a href="https://wa.me/5588993404371" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
+      <a href="https://wa.me/5588992034500" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="white" viewBox="0 0 24 24">
         <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
        </svg>
@@ -7647,6 +7733,7 @@
    </div>
   </div>
  </div>
+
  <div id="modal-128" class="fixed inset-0 bg-gray-600 bg-opacity-50 flex items-center justify-center z-50 hidden">
   <div class="bg-white p-6 rounded-lg shadow-lg relative w-full max-w-md mx-4 md:mx-auto">
    <button class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-2xl font-bold" onclick="closeModal('modal-128')">&times;</button>
@@ -7661,7 +7748,7 @@
       </div>
       <div>
        <p class="text-sm text-gray-500">Nome</p>
-       <p class="font-medium">Empório lanches Fast Food</p>
+       <p class="font-medium">Nyki Delivery</p>
       </div>
      </div>
      <div class="flex items-center">
@@ -7672,11 +7759,11 @@
       </div>
       <div>
        <p class="text-sm text-gray-500">Telefone</p>
-       <p class="font-medium">88 9.9340-4371</p>
+       <p class="font-medium">88 9.9239-3392</p>
       </div>
      </div>
      <div class="pt-4">
-      <a href="https://wa.me/5588993404371" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
+      <a href="https://wa.me/5588992393392" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="white" viewBox="0 0 24 24">
         <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
        </svg>
@@ -7687,6 +7774,7 @@
    </div>
   </div>
  </div>
+
  <div id="modal-129" class="fixed inset-0 bg-gray-600 bg-opacity-50 flex items-center justify-center z-50 hidden">
   <div class="bg-white p-6 rounded-lg shadow-lg relative w-full max-w-md mx-4 md:mx-auto">
    <button class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-2xl font-bold" onclick="closeModal('modal-129')">&times;</button>
@@ -7701,7 +7789,7 @@
       </div>
       <div>
        <p class="text-sm text-gray-500">Nome</p>
-       <p class="font-medium">Empório lanches Fast Food</p>
+       <p class="font-medium">Farmalê Camocim</p>
       </div>
      </div>
      <div class="flex items-center">
@@ -7712,11 +7800,11 @@
       </div>
       <div>
        <p class="text-sm text-gray-500">Telefone</p>
-       <p class="font-medium">88 9.9340-4371</p>
+       <p class="font-medium">88 9.9270-6875</p>
       </div>
      </div>
      <div class="pt-4">
-      <a href="https://wa.me/5588993404371" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
+      <a href="https://wa.me/5588992706875" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="white" viewBox="0 0 24 24">
         <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
        </svg>
@@ -7727,6 +7815,7 @@
    </div>
   </div>
  </div>
+
  <div id="modal-130" class="fixed inset-0 bg-gray-600 bg-opacity-50 flex items-center justify-center z-50 hidden">
   <div class="bg-white p-6 rounded-lg shadow-lg relative w-full max-w-md mx-4 md:mx-auto">
    <button class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-2xl font-bold" onclick="closeModal('modal-130')">&times;</button>
@@ -7741,7 +7830,7 @@
       </div>
       <div>
        <p class="text-sm text-gray-500">Nome</p>
-       <p class="font-medium">Empório lanches Fast Food</p>
+       <p class="font-medium">Pastelê</p>
       </div>
      </div>
      <div class="flex items-center">
@@ -7752,11 +7841,11 @@
       </div>
       <div>
        <p class="text-sm text-gray-500">Telefone</p>
-       <p class="font-medium">88 9.9340-4371</p>
+       <p class="font-medium">88 9.9279-6377</p>
       </div>
      </div>
      <div class="pt-4">
-      <a href="https://wa.me/5588993404371" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
+      <a href="https://wa.me/5588992796377" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="white" viewBox="0 0 24 24">
         <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
        </svg>
@@ -7767,6 +7856,7 @@
    </div>
   </div>
  </div>
+
  <div id="modal-131" class="fixed inset-0 bg-gray-600 bg-opacity-50 flex items-center justify-center z-50 hidden">
   <div class="bg-white p-6 rounded-lg shadow-lg relative w-full max-w-md mx-4 md:mx-auto">
    <button class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-2xl font-bold" onclick="closeModal('modal-131')">&times;</button>
@@ -7781,7 +7871,7 @@
       </div>
       <div>
        <p class="text-sm text-gray-500">Nome</p>
-       <p class="font-medium">Empório lanches Fast Food</p>
+       <p class="font-medium">Restaeurante e Pizzaria La Plazza</p>
       </div>
      </div>
      <div class="flex items-center">
@@ -7792,11 +7882,11 @@
       </div>
       <div>
        <p class="text-sm text-gray-500">Telefone</p>
-       <p class="font-medium">88 9.9340-4371</p>
+       <p class="font-medium">88 9.9282-6124</p>
       </div>
      </div>
      <div class="pt-4">
-      <a href="https://wa.me/5588993404371" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
+      <a href="https://wa.me/5588992826124" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="white" viewBox="0 0 24 24">
         <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
        </svg>
@@ -7807,6 +7897,7 @@
    </div>
   </div>
  </div>
+
  <div id="modal-132" class="fixed inset-0 bg-gray-600 bg-opacity-50 flex items-center justify-center z-50 hidden">
   <div class="bg-white p-6 rounded-lg shadow-lg relative w-full max-w-md mx-4 md:mx-auto">
    <button class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-2xl font-bold" onclick="closeModal('modal-132')">&times;</button>
@@ -7821,7 +7912,7 @@
       </div>
       <div>
        <p class="text-sm text-gray-500">Nome</p>
-       <p class="font-medium">Empório lanches Fast Food</p>
+       <p class="font-medium">Loja Ponto8</p>
       </div>
      </div>
      <div class="flex items-center">
@@ -7832,11 +7923,11 @@
       </div>
       <div>
        <p class="text-sm text-gray-500">Telefone</p>
-       <p class="font-medium">88 9.9340-4371</p>
+       <p class="font-medium">88 9.9284-2533</p>
       </div>
      </div>
      <div class="pt-4">
-      <a href="https://wa.me/5588993404371" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
+      <a href="https://wa.me/5588992842533" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="white" viewBox="0 0 24 24">
         <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
        </svg>
@@ -7862,7 +7953,7 @@
                     </div>
                     <div>
                         <p class="text-sm text-gray-500">Nome</p>
-                        <p class="font-medium">Nome do Cliente 133</p>
+                        <p class="font-medium">Ma</p>
                     </div>
                 </div>
                 <div class="flex items-center">
@@ -7873,11 +7964,11 @@
                     </div>
                     <div>
                         <p class="text-sm text-gray-500">Telefone</p>
-                        <p class="font-medium">88 9.XXX-XXXX</p>
+                        <p class="font-medium">88 9.9294-8484</p>
                     </div>
                 </div>
                 <div class="pt-4">
-                    <a href="https://wa.me/5588993404371" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
+                    <a href="https://wa.me/5588992948484" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="white" viewBox="0 0 24 24">
                             <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
                         </svg>
@@ -7903,7 +7994,7 @@
                     </div>
                     <div>
                         <p class="text-sm text-gray-500">Nome</p>
-                        <p class="font-medium">Nome do Cliente 134</p>
+                        <p class="font-medium">RL Store</p>
                     </div>
                 </div>
                 <div class="flex items-center">
@@ -7914,11 +8005,11 @@
                     </div>
                     <div>
                         <p class="text-sm text-gray-500">Telefone</p>
-                        <p class="font-medium">88 9.XXX-XXXX</p>
+                        <p class="font-medium">88 9.9406-9837</p>
                     </div>
                 </div>
                 <div class="pt-4">
-                    <a href="https://wa.me/5588993404371" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
+                    <a href="https://wa.me/5588994069837" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="white" viewBox="0 0 24 24">
                             <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
                         </svg>
@@ -7944,7 +8035,7 @@
                     </div>
                     <div>
                         <p class="text-sm text-gray-500">Nome</p>
-                        <p class="font-medium">Nome do Cliente 135</p>
+                        <p class="font-medium">Drogaria Ultra popular camocim-Ce</p>
                     </div>
                 </div>
                 <div class="flex items-center">
@@ -7955,11 +8046,11 @@
                     </div>
                     <div>
                         <p class="text-sm text-gray-500">Telefone</p>
-                        <p class="font-medium">88 9.XXX-XXXX</p>
+                        <p class="font-medium">88 9.9408-3735</p>
                     </div>
                 </div>
                 <div class="pt-4">
-                    <a href="https://wa.me/5588993404371" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
+                    <a href="https://wa.me/5588994083735" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="white" viewBox="0 0 24 24">
                             <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
                         </svg>
@@ -7985,7 +8076,7 @@
                     </div>
                     <div>
                         <p class="text-sm text-gray-500">Nome</p>
-                        <p class="font-medium">Nome do Cliente 136</p>
+                        <p class="font-medium">Graficam Gráfica Camocim</p>
                     </div>
                 </div>
                 <div class="flex items-center">
@@ -7996,11 +8087,11 @@
                     </div>
                     <div>
                         <p class="text-sm text-gray-500">Telefone</p>
-                        <p class="font-medium">88 9.XXX-XXXX</p>
+                        <p class="font-medium">88 9.9415-1139</p>
                     </div>
                 </div>
                 <div class="pt-4">
-                    <a href="https://wa.me/5588993404371" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
+                    <a href="https://wa.me/5588994151139" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="white" viewBox="0 0 24 24">
                             <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
                         </svg>
@@ -8026,7 +8117,7 @@
                     </div>
                     <div>
                         <p class="text-sm text-gray-500">Nome</p>
-                        <p class="font-medium">Nome do Cliente 137</p>
+                        <p class="font-medium">Will Fit Suplementos</p>
                     </div>
                 </div>
                 <div class="flex items-center">
@@ -8037,11 +8128,11 @@
                     </div>
                     <div>
                         <p class="text-sm text-gray-500">Telefone</p>
-                        <p class="font-medium">88 9.XXX-XXXX</p>
+                        <p class="font-medium">88 9.9415-9563</p>
                     </div>
                 </div>
                 <div class="pt-4">
-                    <a href="https://wa.me/5588993404371" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
+                    <a href="https://wa.me/5588994159563" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="white" viewBox="0 0 24 24">
                             <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
                         </svg>
@@ -8067,7 +8158,7 @@
                     </div>
                     <div>
                         <p class="text-sm text-gray-500">Nome</p>
-                        <p class="font-medium">Nome do Cliente 138</p>
+                        <p class="font-medium">XTimports</p>
                     </div>
                 </div>
                 <div class="flex items-center">
@@ -8078,11 +8169,11 @@
                     </div>
                     <div>
                         <p class="text-sm text-gray-500">Telefone</p>
-                        <p class="font-medium">88 9.XXX-XXXX</p>
+                        <p class="font-medium">88 9.9436-9962</p>
                     </div>
                 </div>
                 <div class="pt-4">
-                    <a href="https://wa.me/5588993404371" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
+                    <a href="https://wa.me/5588994369962" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="white" viewBox="0 0 24 24">
                             <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
                         </svg>
@@ -8108,7 +8199,7 @@
                     </div>
                     <div>
                         <p class="text-sm text-gray-500">Nome</p>
-                        <p class="font-medium">Nome do Cliente 139</p>
+                        <p class="font-medium">Alô Pizzas</p>
                     </div>
                 </div>
                 <div class="flex items-center">
@@ -8119,11 +8210,11 @@
                     </div>
                     <div>
                         <p class="text-sm text-gray-500">Telefone</p>
-                        <p class="font-medium">88 9.XXX-XXXX</p>
+                        <p class="font-medium">88 9.9455-3474</p>
                     </div>
                 </div>
                 <div class="pt-4">
-                    <a href="https://wa.me/5588993404371" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
+                    <a href="https://wa.me/5588994553474" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="white" viewBox="0 0 24 24">
                             <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
                         </svg>
@@ -8149,7 +8240,7 @@
                     </div>
                     <div>
                         <p class="text-sm text-gray-500">Nome</p>
-                        <p class="font-medium">Nome do Cliente 140</p>
+                        <p class="font-medium">Farmácia Nova Esperança</p>
                     </div>
                 </div>
                 <div class="flex items-center">
@@ -8160,11 +8251,11 @@
                     </div>
                     <div>
                         <p class="text-sm text-gray-500">Telefone</p>
-                        <p class="font-medium">88 9.XXX-XXXX</p>
+                        <p class="font-medium">88 9.9459-2171</p>
                     </div>
                 </div>
                 <div class="pt-4">
-                    <a href="https://wa.me/5588993404371" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
+                    <a href="https://wa.me/5588994592171" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="white" viewBox="0 0 24 24">
                             <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
                         </svg>
@@ -8190,7 +8281,7 @@
                     </div>
                     <div>
                         <p class="text-sm text-gray-500">Nome</p>
-                        <p class="font-medium">Nome do Cliente 141</p>
+                        <p class="font-medium">Empório Camocim produtos Naturais</p>
                     </div>
                 </div>
                 <div class="flex items-center">
@@ -8201,11 +8292,11 @@
                     </div>
                     <div>
                         <p class="text-sm text-gray-500">Telefone</p>
-                        <p class="font-medium">88 9.XXX-XXXX</p>
+                        <p class="font-medium">88 9.9470-6918</p>
                     </div>
                 </div>
                 <div class="pt-4">
-                    <a href="https://wa.me/5588993404371" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
+                    <a href="https://wa.me/5588994706918" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="white" viewBox="0 0 24 24">
                             <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
                         </svg>
@@ -8231,7 +8322,7 @@
                     </div>
                     <div>
                         <p class="text-sm text-gray-500">Nome</p>
-                        <p class="font-medium">Nome do Cliente 142</p>
+                        <p class="font-medium">Variant</p>
                     </div>
                 </div>
                 <div class="flex items-center">
@@ -8242,11 +8333,11 @@
                     </div>
                     <div>
                         <p class="text-sm text-gray-500">Telefone</p>
-                        <p class="font-medium">88 9.XXX-XXXX</p>
+                        <p class="font-medium">88 9.9483-9069</p>
                     </div>
                 </div>
                 <div class="pt-4">
-                    <a href="https://wa.me/5588993404371" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
+                    <a href="https://wa.me/5588994839069" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="white" viewBox="0 0 24 24">
                             <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
                         </svg>
@@ -8272,7 +8363,7 @@
                     </div>
                     <div>
                         <p class="text-sm text-gray-500">Nome</p>
-                        <p class="font-medium">Nome do Cliente 143</p>
+                        <p class="font-medium">Farias Burger</p>
                     </div>
                 </div>
                 <div class="flex items-center">
@@ -8283,11 +8374,11 @@
                     </div>
                     <div>
                         <p class="text-sm text-gray-500">Telefone</p>
-                        <p class="font-medium">88 9.XXX-XXXX</p>
+                        <p class="font-medium">88 9.9484-6431</p>
                     </div>
                 </div>
                 <div class="pt-4">
-                    <a href="https://wa.me/5588993404371" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
+                    <a href="https://wa.me/5588994846431" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="white" viewBox="0 0 24 24">
                             <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
                         </svg>
@@ -8313,7 +8404,7 @@
                     </div>
                     <div>
                         <p class="text-sm text-gray-500">Nome</p>
-                        <p class="font-medium">Nome do Cliente 144</p>
+                        <p class="font-medium">Feijoada da Rafa</p>
                     </div>
                 </div>
                 <div class="flex items-center">
@@ -8324,11 +8415,11 @@
                     </div>
                     <div>
                         <p class="text-sm text-gray-500">Telefone</p>
-                        <p class="font-medium">88 9.XXX-XXXX</p>
+                        <p class="font-medium">88 9.9486-7320</p>
                     </div>
                 </div>
                 <div class="pt-4">
-                    <a href="https://wa.me/5588993404371" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
+                    <a href="https://wa.me/5588994867320" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="white" viewBox="0 0 24 24">
                             <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
                         </svg>
@@ -8354,7 +8445,7 @@
                     </div>
                     <div>
                         <p class="text-sm text-gray-500">Nome</p>
-                        <p class="font-medium">Nome do Cliente 145</p>
+                        <p class="font-medium">Authoral Gastrobar </p>
                     </div>
                 </div>
                 <div class="flex items-center">
@@ -8365,11 +8456,11 @@
                     </div>
                     <div>
                         <p class="text-sm text-gray-500">Telefone</p>
-                        <p class="font-medium">88 9.XXX-XXXX</p>
+                        <p class="font-medium">88 9.9487-0499</p>
                     </div>
                 </div>
                 <div class="pt-4">
-                    <a href="https://wa.me/5588993404371" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
+                    <a href="https://wa.me/5588994870499" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="white" viewBox="0 0 24 24">
                             <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
                         </svg>
@@ -8395,7 +8486,7 @@
                     </div>
                     <div>
                         <p class="text-sm text-gray-500">Nome</p>
-                        <p class="font-medium">Nome do Cliente 146</p>
+                        <p class="font-medium">Pronto do Camarão Camocim</p>
                     </div>
                 </div>
                 <div class="flex items-center">
@@ -8406,11 +8497,11 @@
                     </div>
                     <div>
                         <p class="text-sm text-gray-500">Telefone</p>
-                        <p class="font-medium">88 9.XXX-XXXX</p>
+                        <p class="font-medium">88 9.9488-1002</p>
                     </div>
                 </div>
                 <div class="pt-4">
-                    <a href="https://wa.me/5588993404371" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
+                    <a href="https://wa.me/5588994881002" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="white" viewBox="0 0 24 24">
                             <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
                         </svg>
@@ -8436,7 +8527,7 @@
                     </div>
                     <div>
                         <p class="text-sm text-gray-500">Nome</p>
-                        <p class="font-medium">Nome do Cliente 147</p>
+                        <p class="font-medium">Caserinhos Da Família</p>
                     </div>
                 </div>
                 <div class="flex items-center">
@@ -8447,11 +8538,11 @@
                     </div>
                     <div>
                         <p class="text-sm text-gray-500">Telefone</p>
-                        <p class="font-medium">88 9.XXX-XXXX</p>
+                        <p class="font-medium">88 9.9488-5525</p>
                     </div>
                 </div>
                 <div class="pt-4">
-                    <a href="https://wa.me/5588993404371" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
+                    <a href="https://wa.me/5588994885525" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="white" viewBox="0 0 24 24">
                             <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
                         </svg>
@@ -8477,7 +8568,7 @@
                     </div>
                     <div>
                         <p class="text-sm text-gray-500">Nome</p>
-                        <p class="font-medium">Nome do Cliente 148</p>
+                        <p class="font-medium">Doce Pudim </p>
                     </div>
                 </div>
                 <div class="flex items-center">
@@ -8488,11 +8579,11 @@
                     </div>
                     <div>
                         <p class="text-sm text-gray-500">Telefone</p>
-                        <p class="font-medium">88 9.XXX-XXXX</p>
+                        <p class="font-medium">88 9.9495-7763</p>
                     </div>
                 </div>
                 <div class="pt-4">
-                    <a href="https://wa.me/5588993404371" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
+                    <a href="https://wa.me/5588994957763" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="white" viewBox="0 0 24 24">
                             <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
                         </svg>
@@ -8518,7 +8609,7 @@
                     </div>
                     <div>
                         <p class="text-sm text-gray-500">Nome</p>
-                        <p class="font-medium">Nome do Cliente 149</p>
+                        <p class="font-medium">Cacau Show  Camocim</p>
                     </div>
                 </div>
                 <div class="flex items-center">
@@ -8529,11 +8620,11 @@
                     </div>
                     <div>
                         <p class="text-sm text-gray-500">Telefone</p>
-                        <p class="font-medium">88 9.XXX-XXXX</p>
+                        <p class="font-medium">88 9.9703-0009</p>
                     </div>
                 </div>
                 <div class="pt-4">
-                    <a href="https://wa.me/5588993404371" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
+                    <a href="https://wa.me/5588997030009" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="white" viewBox="0 0 24 24">
                             <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
                         </svg>
@@ -8559,7 +8650,7 @@
                     </div>
                     <div>
                         <p class="text-sm text-gray-500">Nome</p>
-                        <p class="font-medium">Nome do Cliente 150</p>
+                        <p class="font-medium">Macarrão Expresso</p>
                     </div>
                 </div>
                 <div class="flex items-center">
@@ -8570,11 +8661,11 @@
                     </div>
                     <div>
                         <p class="text-sm text-gray-500">Telefone</p>
-                        <p class="font-medium">88 9.XXX-XXXX</p>
+                        <p class="font-medium">88 9.9804-5687</p>
                     </div>
                 </div>
                 <div class="pt-4">
-                    <a href="https://wa.me/5588993404371" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
+                    <a href="https://wa.me/5588998045687" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="white" viewBox="0 0 24 24">
                             <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
                         </svg>
@@ -8600,7 +8691,7 @@
                     </div>
                     <div>
                         <p class="text-sm text-gray-500">Nome</p>
-                        <p class="font-medium">Nome do Cliente 151</p>
+                        <p class="font-medium">Clínica Bioesthetic</p>
                     </div>
                 </div>
                 <div class="flex items-center">
@@ -8611,11 +8702,11 @@
                     </div>
                     <div>
                         <p class="text-sm text-gray-500">Telefone</p>
-                        <p class="font-medium">88 9.XXX-XXXX</p>
+                        <p class="font-medium">88 9.9834-7392</p>
                     </div>
                 </div>
                 <div class="pt-4">
-                    <a href="https://wa.me/5588993404371" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
+                    <a href="https://wa.me/5588998347392" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="white" viewBox="0 0 24 24">
                             <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
                         </svg>
@@ -8641,7 +8732,7 @@
                     </div>
                     <div>
                         <p class="text-sm text-gray-500">Nome</p>
-                        <p class="font-medium">Nome do Cliente 152</p>
+                        <p class="font-medium">Onda do Mar</p>
                     </div>
                 </div>
                 <div class="flex items-center">
@@ -8652,11 +8743,11 @@
                     </div>
                     <div>
                         <p class="text-sm text-gray-500">Telefone</p>
-                        <p class="font-medium">88 9.XXX-XXXX</p>
+                        <p class="font-medium">88 9.9921-0895</p>
                     </div>
                 </div>
                 <div class="pt-4">
-                    <a href="https://wa.me/5588993404371" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
+                    <a href="https://wa.me/5588999210895" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="white" viewBox="0 0 24 24">
                             <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
                         </svg>
@@ -8682,7 +8773,7 @@
                     </div>
                     <div>
                         <p class="text-sm text-gray-500">Nome</p>
-                        <p class="font-medium">Nome do Cliente 153</p>
+                        <p class="font-medium">Sal & Pimenta </p>
                     </div>
                 </div>
                 <div class="flex items-center">
@@ -8693,11 +8784,11 @@
                     </div>
                     <div>
                         <p class="text-sm text-gray-500">Telefone</p>
-                        <p class="font-medium">88 9.XXX-XXXX</p>
+                        <p class="font-medium">88 9.9948-7332</p>
                     </div>
                 </div>
                 <div class="pt-4">
-                    <a href="https://wa.me/5588993404371" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
+                    <a href="https://wa.me/5588999487332" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="white" viewBox="0 0 24 24">
                             <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
                         </svg>
@@ -8723,7 +8814,7 @@
                     </div>
                     <div>
                         <p class="text-sm text-gray-500">Nome</p>
-                        <p class="font-medium">Nome do Cliente 154</p>
+                        <p class="font-medium">Goutec Cell(Sousa)</p>
                     </div>
                 </div>
                 <div class="flex items-center">
@@ -8734,11 +8825,11 @@
                     </div>
                     <div>
                         <p class="text-sm text-gray-500">Telefone</p>
-                        <p class="font-medium">88 9.XXX-XXXX</p>
+                        <p class="font-medium">88 9.9994-1472</p>
                     </div>
                 </div>
                 <div class="pt-4">
-                    <a href="https://wa.me/5588993404371" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
+                    <a href="https://wa.me/5588999941472" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="white" viewBox="0 0 24 24">
                             <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
                         </svg>
@@ -8764,7 +8855,7 @@
                     </div>
                     <div>
                         <p class="text-sm text-gray-500">Nome</p>
-                        <p class="font-medium">Nome do Cliente 155</p>
+                        <p class="font-medium">Meu Açai Camocim</p>
                     </div>
                 </div>
                 <div class="flex items-center">
@@ -8775,11 +8866,11 @@
                     </div>
                     <div>
                         <p class="text-sm text-gray-500">Telefone</p>
-                        <p class="font-medium">88 9.XXX-XXXX</p>
+                        <p class="font-medium">88 9.9996-8319</p>
                     </div>
                 </div>
                 <div class="pt-4">
-                    <a href="https://wa.me/5588993404371" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
+                    <a href="https://wa.me/55889999683191" target="_blank" class="whatsapp-btn bg-green-500 hover:bg-green-600 flex items-center justify-center w-full py-3 px-4 rounded-lg text-white font-medium">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="white" viewBox="0 0 24 24">
                             <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
                         </svg>
@@ -8790,7 +8881,7 @@
         </div>
     </div>
 </div>
-
+<!---
 <div id="modal-156" class="fixed inset-0 bg-gray-600 bg-opacity-50 flex items-center justify-center z-50 hidden">
     <div class="bg-white p-6 rounded-lg shadow-lg relative w-full max-w-md mx-4 md:mx-auto">
         <button class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-2xl font-bold" onclick="closeModal('modal-156')">&times;</button>
@@ -10635,6 +10726,8 @@
             </div>
         </div>
     </div>
+
+    -->
 <!------------------------------------------------------>
 
 
