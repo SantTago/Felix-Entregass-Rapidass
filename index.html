@@ -242,6 +242,25 @@
   </div>
 </div>
 
+<!------------------------------------------------------------------------------------------------>
+ <section class="py-8">
+    <div class="container mx-auto px-4">
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <div class="h-80 w-full">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26606.216875827944!2d-40.87613444566076!3d-2.9006699628455026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ebdbdcfbe66681%3A0x6ec8f325507490fb!2sCamocim%2C%20CE%2C%2062400-000!5e1!3m2!1spt-BR!2sbr!4v1749955021344!5m2!1spt-BR!2sbr" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 <!------------------------------------------------------------------------------------------------>
 <style>
@@ -315,7 +334,146 @@
 <!--------------------------------------------------------------------------->
 <section class="profiles-section">
     <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold text-center text-[#003366] mb-10">Nossos Clientes</h2>
+
+        <style>
+            /* Variáveis de Cores Otimizadas para Profissionalismo (AGORA COM FUNDO CLARO) */
+:root {
+    --color-light-background: #FFFFFF;         /* Fundo principal e do título (BRANCO) */
+    --color-text-primary: #000000;            /* Texto principal (PRETO) */
+    --color-accent-gold: #FFD700;             /* Dourado para destaque e brilho */
+    --color-subtle-shadow: rgba(0, 0, 0, 0.2); /* Sombra mais suave para fundo claro */
+    --color-glow-gradient-start: rgba(0, 0, 0, 0.08); /* Início do brilho radial (mais sutil no fundo claro) */
+}
+
+/* Base: Garante que o corpo do site tenha o fundo CLARO */
+body {
+    background-color: var(--color-light-background); /* Fundo branco para o site */
+    color: var(--color-text-primary); /* Define a cor padrão do texto do corpo como preto */
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* Contêiner do Título (Fundo BRANCO de Ponta a Ponta) */
+.client-title-wrapper {
+    width: 100%;
+    /* background-color: var(--color-light-background); */
+    padding: 2.5rem 0;
+    text-align: center;
+    box-sizing: border-box;
+   
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); */
+}
+
+/* Estilo do Título Principal (Nossos Clientes) */
+.section-heading.client-heading {
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: var(--color-text-primary); /* Texto PRETO para alto contraste */
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin: 0 auto;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0;
+
+    /* Animações: sequenciadas e com duracao controlada */
+    opacity: 0;
+    transform: scale(0.8);
+    animation: revealZoomFadeIn 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards,
+               glitterTextEffect 3s infinite alternate cubic-bezier(0.42, 0, 0.58, 1) 0.8s;
+}
+
+/* Pseudo-elemento para o efeito de "brilho de fundo" ou "holofote" */
+.section-heading.client-heading::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    /* Ajuste o gradiente para ser sutil em fundo claro */
+    background: radial-gradient(circle at center, var(--color-glow-gradient-start) 0%, transparent 70%);
+    border-radius: 12px;
+    z-index: -1;
+    opacity: 0;
+    transform: scale(0.6);
+    animation: pulseGlowEffect 3s infinite alternate cubic-bezier(0.42, 0, 0.58, 1) 0.8s;
+}
+
+/* --- Keyframes das Animações (SEM ALTERAÇÕES NAS ANIMAÇÕES EM SI, APENAS CORES) --- */
+
+/* Animação de entrada: Revelar com Zoom e Fade In */
+@keyframes revealZoomFadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Animação de brilho de texto com efeito dourado e pulso */
+@keyframes glitterTextEffect {
+    0%, 100% {
+        text-shadow: 0 0 8px rgba(0, 0, 0, 0.1), /* Sombra sutil para texto preto */
+                     0 0 15px rgba(0, 0, 0, 0.05);
+        color: var(--color-text-primary); /* Texto PRETO */
+        transform: scale(1);
+    }
+    50% {
+        text-shadow: 0 0 25px var(--color-accent-gold), /* Brilho dourado forte */
+                     0 0 40px rgba(255, 215, 0, 0.7),
+                     0 0 60px rgba(255, 215, 0, 0.2);
+        color: var(--color-accent-gold); /* Cor do texto fica dourada no pico */
+        transform: scale(1.03);
+    }
+}
+
+/* Animação do brilho de fundo do pseudo-elemento */
+@keyframes pulseGlowEffect {
+    0%, 100% {
+        opacity: 0;
+        transform: scale(0.6);
+    }
+    50% {
+        opacity: 0.3; /* Brilho mais sutil no pico para fundo claro */
+        transform: scale(1.05);
+    }
+}
+
+/* --- Media Queries para Responsividade --- */
+@media (max-width: 768px) {
+    .client-title-wrapper {
+        padding: 1.8rem 0;
+    }
+    .section-heading.client-heading {
+        font-size: 2.5rem;
+        letter-spacing: 0.05em;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-heading.client-heading {
+        font-size: 2rem;
+        letter-spacing: 0.03em;
+    }
+}
+        </style>
+
+       <section class="client-showcase-section">
+    <div class="container-fluid client-title-wrapper">
+        <h2 class="section-heading client-heading">Nossos Clientes</h2>
+    </div>
+    </section>
+
+
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-8">
 
             <!-- Perfil do Cliente 1 -->
